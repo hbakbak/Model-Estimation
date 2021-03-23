@@ -1,7 +1,7 @@
 function [density] = parzen1D(data,std_dev)
 %This function estimates the density using the Parzen method, assuming we
 %have Gaussian windows 
-x = linspace(min(data), max(data), length(data)); 
+x = min(data):0.01:max(data)
 density = zeros(size(x)); 
 N = length(data)
 p=0; 
