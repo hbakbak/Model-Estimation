@@ -49,7 +49,7 @@ hold on;
 plot(x_b, p_b_true);
 plot(x_b, p_b_est, 'Color', 'm');
 legend('Estimated p(x)','True p(x)');
-title('1D Exponential Parametric Estimation Exponential dataset b');
+title('1D Exponential Parametric Estimation Gaussian dataset b');
 xlabel('x'); 
 ylabel('p(x)');
 grid on;
