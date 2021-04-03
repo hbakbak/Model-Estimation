@@ -31,14 +31,14 @@ param_estim = ml_classifier(x1, x2, class_ab, class_bc, class_ac);
 % Plotting parametric estimate
 figure(); %change figure name accordingly
 hold on;
-title('Parametric Estimation for 2D Case');
+title('Parametric Estimation - 2D');
 xlabel('x1');
 ylabel('x2');
 scatter(al(:, 1), al(:, 2));
 scatter(bl(:, 1), bl(:, 2));
 scatter(cl(:, 1), cl(:, 2));
 contour(x1, x2, param_estim ,'color', 'black');
-legend('Class A', 'Class B', 'Class C', 'ML Decision Boundary');
+legend('al', 'bl', 'cl', 'ML Decision Boundary');
 hold off;
 
 
